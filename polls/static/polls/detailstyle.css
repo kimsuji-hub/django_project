@@ -1,0 +1,6 @@
+body {
+    background: white url("images/detailbackground.gif") no-repeat;
+    background-position: 80% 30%;
+    background-size: 20%;
+    height: 500px;
+}

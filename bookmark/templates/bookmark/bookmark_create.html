@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Bookmark Add{% endblock %}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="button" class="btn btn-secondary btn-sm" onClick="location.href='{% url 'bookmark:list' %}'">Cancel</button>
+    <input type="submit" value="Add" class="btn btn-info btn-sm">
+</form>
+{% endblock %}

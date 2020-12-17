@@ -1,0 +1,16 @@
+body {
+    background: white url("images/welcome.gif") no-repeat;
+    background-position: 80% 30%;
+    background-size: 30%;
+    height: 500px;
+    /*!*border-top: 10px solid #ccc;*!*/
+}
+
+title{
+    color: #c80;
+    font-weight: bold;
+}
+
+li a {
+    color: green;
+}

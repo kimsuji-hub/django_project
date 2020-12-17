@@ -1,0 +1,11 @@
+body {
+    background: white url("images/indexbackground.gif") no-repeat;
+    background-position: 80% 30% ;
+    background-size: 20%;
+    height: 500px;
+    /*border-top: 10px solid #ccc;*/
+}
+
+li a {
+    color: green;
+}

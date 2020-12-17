@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Polls Results{% endblock %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/resultsstyle.css' %}">
+
+<h1>{{question.question_text}}</h1>
+<ul>
+    {% for choice in question.choice_set.all %}
+    <li>{{choice.choice_text}} -- {{choice.votes}} vote{{choice.votes|pluralize}}</li>
+    {% endfor %}
+</ul>
+
+<br/>
+&nbsp;&nbsp; <input type="button" value="Again" onClick="location.href='{% url 'polls:detail' question.id %}'">
+<input type="button" value="Main" onClick="location.href='{% url 'polls:index' %}'">
+
+{% endblock %}
